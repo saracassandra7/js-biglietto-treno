@@ -9,18 +9,23 @@ const scontoOver = 0.4
 
 const PrezzoBiglietto = kmPercorso * prezzoAlKm
 let prezzoTot;
+let sconto;
 
 if (etaUtente < maggiorenne){
-  prezzoTot = PrezzoBiglietto * scontoMaggiorenne;
-  console.log(PrezzoBiglietto);
-
+  sconto = PrezzoBiglietto * scontoMaggiorenne;
+  prezzoTot = PrezzoBiglietto - sconto;
+  
 } else if (etaUtente > over){
-  prezzoTot = PrezzoBiglietto * scontoOver;
-  console.log(PrezzoBiglietto);
+  sconto = PrezzoBiglietto * scontoOver;
+  prezzoTot = PrezzoBiglietto - sconto;
   
 } else {
   prezzoTot = PrezzoBiglietto;
-  console.log(PrezzoBiglietto);
-  
+
 }
+
+let prezzoFinale = prezzoTot.toFixed(2);
+
+document.getElementById('dati_biglietto').innerHTML = `Ciao, per percorrere ${kmPercorso} km il costo del biglietto sarà di ${prezzoFinale} €. <br>
+Grazie per aver scelto di viaggiare con noi :)`
 
