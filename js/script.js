@@ -26,6 +26,6 @@ if (etaUtente < maggiorenne){
 
 let prezzoFinale = prezzoTot.toFixed(2);
 
-document.getElementById('dati_biglietto').innerHTML = `Ciao, per percorrere ${kmPercorso} km il costo del biglietto sarà di ${prezzoFinale} €. <br>
+document.getElementById('dati_biglietto').innerHTML = `Ciao, per percorrere <strong>${kmPercorso} km</strong> il costo del biglietto sarà di <strong>${prezzoFinale} €</strong>. <br>
 Grazie per aver scelto di viaggiare con noi :)`
 

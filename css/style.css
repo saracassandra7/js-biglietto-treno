@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(img/spiritedaway.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  background-color: rgba(214, 214, 214, 0.74);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 40px;
+  box-shadow: 5px 5px 10px #2c2c2c;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 200%;
+  color: rgb(78, 18, 18);
+}
+
+.container p{
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
